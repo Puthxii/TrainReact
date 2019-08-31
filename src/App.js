@@ -31,7 +31,7 @@ class App extends Component{
               <div>{user.phone}</div>
               <hr />
           </div>       
-        ) : <Loading/>
+        ) : <Loading message="Loading..." title="..." >Please wait</Loading>
         }
       </div>
     )

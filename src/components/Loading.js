@@ -2,10 +2,11 @@ import React, {Component} from 'react';
 
 class Loading extends Component{
 
-    render(){
+    render(){ 
+        let {message, title, children} = this.props;
         return(
             <div>
-                Loading...
+                { message + " " + title + " "+ children}
             </div>
         )
     }
