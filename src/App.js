@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import Loading from './components/Loading';
 
 class App extends Component{
   state = {
@@ -30,7 +31,7 @@ class App extends Component{
               <div>{user.phone}</div>
               <hr />
           </div>       
-        ) : "Loading..."
+        ) : <Loading/>
         }
       </div>
     )
